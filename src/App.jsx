@@ -2,12 +2,6 @@ import { useState, useEffect } from "react";
 import Story from "./components/Story";
 import "./App.css";
 
-/*
-
-2. Map the hook, pass down the IDs to a Story Component. 
-3. Use the IDs to fetch from the item API
-*/
-
 function App() {
   let [storyIDs, setStoryIDs] = useState([]);
 
