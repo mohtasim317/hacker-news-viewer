@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../index.css";
 
 let Story = ({ storyID, storyNumber }) => {
   let [storyData, setStoryData] = useState({});
@@ -16,7 +17,7 @@ let Story = ({ storyID, storyNumber }) => {
   }, []);
 
   return (
-    <div>
+    <div className="story">
       <h3>Story #{storyNumber + 1}</h3>
       <p>{storyData.title}</p>
     </div>
